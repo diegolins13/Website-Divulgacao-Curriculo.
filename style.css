@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('background_website.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.profile {
+  background-image: linear-gradient(to bottom, #8585f7, #084d6e);
+  /*background-color: #084d6e;*/
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile:hover {
+  transform: translateY(-5px);
+}
+
+.profile h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.profile .description { /* Cor da descrição do curriculo */
+  font-size: 13px;
+  color: #dbd9d9;
+  margin-bottom: 15px;
+}
+
+.profile a { /* Configurações dos botões (Ver curriculo) */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d28f43; 
+  color: #000000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.profile a:hover {
+  background-color: #555;
+}
+
+
+h2 { /* Nome da pessoa */
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #060a0d;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  margin-top: 200px;
+  color: #0a0606;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+  .profiles {
+    grid-template-columns: 1fr;
+  }
+}
